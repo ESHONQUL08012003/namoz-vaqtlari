@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* overflow-x:hidden ; */
+  font-family: sans-serif;
+}
+
+.section {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1000000;
+  background-image: url("../imags/Desktop-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-color {
+  position: absolute;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}    
+
+.wrapper {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.wrapper > span {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.wrapper-descriptin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper-region {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.wrapper-region p,
+strong {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  color: #ffffff;
+}
+
+.region {
+  display: flex;
+  justify-content: space-around;
+  width: 441px;
+  margin: 0 auto 40px;
+}
+
+.region h2 {
+  color: #fff;
+}
+
+.region select {
+  width: 200px;
+  padding: 8px 30px;
+  border-radius: 30px;
+}
+
+.wrapper-region strong {
+  color: #ffc700;
+}
+
+.wrapper-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.wrapper-time div {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.wrapper-time div strong {
+  color: #ffc700;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.list-item {
+  text-align: center;
+  padding: 20px 9px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #000000;
+  box-shadow: 0px 10px 100px 10px rgba(255, 255, 255, 0.2);
+  /* filter: blur(1px); */
+  border-radius: 25px;
+}
+
+.list-item h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 46px;
+  color: #ffc700;
+}
+
+.list-item p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 69px;
+  color: #ffffff;
+}
+
+
+
+.real .hours , .minutes, .seconds {
+  font-size: 24px;
+  color: #cccccc;
+}
+
+
+@media screen and (max-width:1200px){
+  .container{
+    max-width: 1024px;
+  }
+}
+
+@media screen and (max-width:1000px){
+  .container{
+    max-width: 992px;
+  }
+
+  .wrapper{
+    max-width: 600px;
+  }
+}
+
+
